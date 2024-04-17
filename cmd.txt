@@ -1,0 +1,18 @@
+docker exec -it cassandra cqlsh -u cassandra -p cassandra localhost 9042
+
+docker compose up -d
+
+spark-submit --master spark://localhost:7077 spark_stream.py
+
+//spark version version 3.5.1
+
+//Scala version 2.12.18
+
+spark-submit --master spark://localhost:7077 spark_stream.py --properties spark.jars.packages=org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1
+
+spark-submit --master spark://localhost:7077 spark_stream.py --jars ~/.ivy2/jars/org.apache.kafka_kafka-clients-3.4.1.jar
+
+//steps i used to fix error:
+
+cd ~/.ivy2/jars
+grep -lRi ByteArraySerializer
