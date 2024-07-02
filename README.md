@@ -3,9 +3,9 @@
 ## Table of Contents
 - Introduction
 - System Architecture
-- What You'll Learn
+- What I Learned
 - Technologies
-- Getting Started
+- Reference
 
 ## Introduction
 This project provides a comprehensive guide to building an end-to-end data engineering pipeline, covering stages from data ingestion to processing and storage. It utilizes Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, Cassandra, and Docker.
@@ -20,7 +20,7 @@ This project provides a comprehensive guide to building an end-to-end data engin
 - **Apache Spark:** Processes data with its master and worker nodes.
 - **Cassandra:** Stores the processed data.
 
-## What You'll Learn
+## What I Learned
 - Setting up a data pipeline with Apache Airflow
 - Real-time data streaming with Apache Kafka
 - Distributed synchronization with Apache Zookeeper
@@ -38,3 +38,5 @@ This project provides a comprehensive guide to building an end-to-end data engin
 - PostgreSQL
 - Docker
 
+##Reference 
+YouTube Video Tutorial.(https://www.youtube.com/watch?v=GqAcTrqKcrY)
